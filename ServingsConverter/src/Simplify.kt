@@ -23,15 +23,15 @@ class Simplify() {
             a -= .75F
             quarterCups += 3
 
-            if (a >= (1/16) && a % (1/16) < (1/48)) {
+            if (a >= 0.0625f && a % 0.0625f < 0.020833f) {
                 while (a > 0) {
-                    a -= (1/16)
+                    a -= 0.0625f
                     tablespoons++
                 }
             }
-            if (a % (1/48) < (1/48)) {
+            if (a % 0.020833f < 0.020833f) {
                 while (a > 0) {
-                    a -= (1/48)
+                    a -= 0.020833f
                     teaspoons++
                 }
             }
@@ -43,15 +43,15 @@ class Simplify() {
             a -= (2/3)
             thirdCups += 2
 
-            if (a >= (1/16) && a % (1/16) < (1/48)) {
+            if (a >= 0.0625f && a % 0.0625f < 0.020833f) {
                 while (a > 0) {
-                    a -= (1/16)
+                    a -= 0.0625f
                     tablespoons++
                 }
             }
-            if (a % (1/48) < (1/48)) {
+            if (a % 0.020833f < 0.020833f) {
                 while (a > 0) {
-                    a -= (1/48)
+                    a -= 0.020833f
                     teaspoons++
                 }
             }
@@ -63,15 +63,15 @@ class Simplify() {
             a -= .5F
             halfCups += 1
 
-            if (a >= (1/16) && a % (1/16) < (1/48)) {
+            if (a >= 0.0625f && a % 0.0625f < 0.020833f) {
                 while (a > 0) {
-                    a -= (1/16)
+                    a -= 0.0625f
                     tablespoons++
                 }
             }
-            if (a % (1/48) < (1/48)) {
+            if (a % 0.020833f < 0.020833f) {
                 while (a > 0) {
-                    a -= (1/48)
+                    a -= 0.020833f
                     teaspoons++
                 }
             }
@@ -79,19 +79,19 @@ class Simplify() {
 
         // If at or above 1/3 cup, remaining amount will be divided between
         // one third cup and whatever tablespoons and teaspoons remain.
-        else if (a >= (1/3)) {
-            a -= (1/3)
+        else if (a >= .33f) {
+            a -= .33f
             thirdCups += 1
 
-            if (a >= (1/16) && a % (1/16) < (1/48)) {
+            if (a >= 0.0625f && a % 0.0625f < 0.020833f) {
                 while (a > 0) {
-                    a -= (1/16)
+                    a -= 0.0625f
                     tablespoons++
                 }
             }
-            if (a % (1/48) < (1/48)) {
+            if (a % 0.020833f < 0.020833f) {
                 while (a > 0) {
-                    a -= (1/48)
+                    a -= 0.020833f
                     teaspoons++
                 }
             }
@@ -103,15 +103,15 @@ class Simplify() {
             a -= .25F
             quarterCups += 1
 
-            if (a >= (1/16) && a % (1/16) < (1/48)) {
+            if (a >= 0.0625f && a % 0.0625f < 0.020833f) {
                 while (a > 0) {
-                    a -= (1/16)
+                    a -= 0.0625f
                     tablespoons++
                 }
             }
-            if (a % (1/48) < (1/48)) {
+            if (a % 0.020833f < 0.020833f) {
                 while (a > 0) {
-                    a -= (1/48)
+                    a -= 0.020833f
                     teaspoons++
                 }
             }
@@ -120,15 +120,15 @@ class Simplify() {
         // If below 1/4 cup, remaining amount will be divided between
         // whatever tablespoons and teaspoons remain.
         else if (a < .25) {
-            if (a >= (1/16) && a % (1/16) < (1/48)) {
+            if (a >= 0.0625f && a % 0.0625f < 0.020833f) {
                 while (a > 0) {
-                    a -= (1/16)
+                    a -= 0.0625f
                     tablespoons++
                 }
             }
-            if (a % (1/48) < (1/48)) {
+            if (a % 0.020833f < 0.020833f) {
                 while (a > 0) {
-                    a -= (1/48)
+                    a -= 0.020833f
                     teaspoons++
                 }
             }
